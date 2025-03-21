@@ -1,90 +1,101 @@
+/* ضبط الصفحة والخلفية */
 body {
     margin: 0;
     height: 100vh; /* لضبط ارتفاع الخلفية مع الشاشة بالكامل */
-    display: flex; /* يساعد في محاذاة العناصر إذا لزم الأمر */
+    display: flex;
     justify-content: center;
     align-items: center;
     background-color: hsla(0, 51%, 33%, 0.644);
-    background-image: url('./photo_2025-03-21_18-38-08.jpg'); /* تأكد من المسار */
+    background-image: url('./background.jpg'); /* تأكد من وضع الصورة في نفس المجلد */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed; /* يجعل الخلفية ثابتة أثناء التمرير */
 }
 
+/* صندوق تسجيل الدخول */
 #login {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto; /* بدلاً من 200px */
     flex-direction: column;
+    align-items: center;
     justify-content: space-evenly;
-    margin-top: 20px;
-    background: rgba(0, 0, 0, 0.5); /* إضافة طبقة شفافة لتحسين التباين مع الخلفية */
-    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); /* إضافة شفافية للخلفية */
+    padding: 30px;
     border-radius: 10px;
+    width: 350px;
+    text-align: center;
 }
 
+/* عنوان الصفحة */
+h1 {
+    font-size: 40px; /* تصغير العنوان لجعل التصميم أكثر تناسقًا */
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* تنسيق المدخلات */
 #inputs {
     display: flex;
     flex-direction: column;
-    margin: 30px 0;
-}
-
-#icons {
-    margin: 30px 0;
-}
-
-#a, #b, #c {
-    margin: 0px 10px;
-}
-
-#aa {
-    margin-bottom: 30px;
+    gap: 15px;
+    width: 100%;
 }
 
 #aa, #bb {
     border-radius: 5px;
     height: 40px;
-    width: 300px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: rgba(255, 255, 255, 0.9);
+    outline: none;
+}
+
+/* أيقونات وسائل التواصل الاجتماعي */
+#icons {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+#a, #b, #c {
+    width: 30px; /* حجم الأيقونات */
+    height: 30px;
+}
+
+/* أزرار الدخول والسياسة */
+#buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#sas1, #sas2 {
+    border-radius: 9px;
+    width: 140px;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
 }
 
 #sas1 {
-    color: rgb(255, 255, 255);
-    border-radius: 9px;
     background-color: #AA1A1C;
-    border: solid #AA1A1C;
-    width: 110px;
-    height: 35px;
-    margin-top: 20px;
-    cursor: pointer;
+    color: white;
+}
+
+#sas1:hover {
+    background-color: #7d1315;
 }
 
 #sas2 {
-    color: rgb(139, 139, 139);
-    border-radius: 10px;
-    height: 40px;
     background-color: white;
-    border: solid white;
-    width: 170px;
-    height: 35px;
-    cursor: pointer;
-}
-
-h1 {
-    font-size: 50px; /* تصغير العنوان لجعل التصميم أكثر تناسقًا */
-    margin: 30px 0 10px 0;
-    text-align: center;
-    color: white;
+    color: rgb(139, 139, 139);
 }
 
 #sas2:hover {
     background-color: #b3b3b3;
     color: white;
-    border: solid #b3b3b3;
-}
-
-#sas1:hover {
-    background-color: #7d1315;
-    border: solid #7d1315;
 }
