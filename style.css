@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    list-style: none;
+    font-style: none;
+    background-color: hsla(0, 51%, 33%, 0.644);
+    background-image: url(photo_2025-03-21_18-38-08.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+#inputs {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+}
+#icons {
+    margin: 30px 0;
+}
+
+#a , #b, #c {
+    
+    margin: 0px 10px;
+}
+#aa  {
+    margin-bottom:30px ;
+}
+
+#aa , #bb {
+    border-radius: 5px;
+    height: 40px;
+    width: 300px;
+}
+#sas1 {
+    color: rgb(255, 255, 255);
+    border-radius:9px;
+    background-color: #AA1A1C;
+    border: solid #AA1A1C ;
+    width: 110px;
+    height: 35px;
+    margin-top: 20px;
+    cursor: pointer;
+
+}
+#sas2 {
+    color: rgb(139, 139, 139);
+    border-radius: 10px;
+    height: 40px;
+    background-color: white;
+    border: solid white ;
+    width: 170px;
+    height: 35px;
+    cursor: pointer;
+}
+h1 {
+    font-size: 100px;
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+
+#sas2:hover {
+    background-color: #b3b3b3;
+    color: white;
+    border: solid #b3b3b3;
+}
+
+#sas1:hover {
+    background-color: #7d1315;
+    border: solid #7d1315;
+}
+
