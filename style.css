@@ -1,11 +1,10 @@
 body {
     margin: 0;
-    list-style: none;
-    font-style: none;
     background-color: hsla(0, 51%, 33%, 0.644);
-    background-image: url(photo_2025-03-21_18-38-08.jpg);
+    background-image: url('./photo_2025-03-21_18-38-08.jpg'); /* تأكد من المسار */
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center; /* لتوسيط الخلفية */
 }
 
 #login {
